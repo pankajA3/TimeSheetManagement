@@ -1,22 +1,87 @@
-<html>
+<!Doctype= html>
+<html ng-app="app">
 
 <head>
-
     <title>TimeSheet_Management</title>
 
      <link href="bootstrap/css/bootstrap.css" rel="stylesheet">
+    <link href="./view.css" rel="stylesheet">
+    <script src="jquery/jquery-1.11.1.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.0.8/angular.min.js"></script><!-- load angular -->
+    <script src="core.js"></script>
+
 </head>
 
-<Body style="background-color:#ffffff">
-<div class="container">
-    <div class="col-sm-12" style="background-color:lavender; height: 122px">TimeSheet Management</div>
-    <div class="col-sm-12" style="background-color:#ffffff;height:500px"><%= new Date()%></div>
-    <div class="col-sm-12" style="background-color:lavender;height:122px">Footer</div>
+<body>
+<h1 class="main_heading" >TimeSheet Management System</h1>
+    <div class="container">
+        <div class="col-sm-12 userlist" >
+            Select User<select class="user_select"">
+                <option>user 1</option>
+            </select>
+        </div>
+        <section class="col-sm-12">
+        <form>
+            <div>
+                <label for="">Date</label>
+                <select>
+                    <option></option>
+                </select>
+             </div>
+            <div>
+                <label for="">  Product/Project/Task</label>
+                <input type="text" name="" value="" />
+            </div>
+            <div>
+                <label for="">Feature/Sub-Task</label>
+                <input type="text" name="" value="" />
+            </div>
+            <div>
+                <label for="">Assigned By</label>
+                <input type="text" name="" value="" />
+            </div>
+            <div>
+                    <label for=""> Efforts(Hours)</label>
+                    <input type="text" name="" value="" />
+            </div>
+            <div>
+                    <label for="">Start Date</label>
+                    <select></select>
+            </div>
+            <div>
+                    <label for="">End Date</label>
+                    <select></select>
+            </div>
+            </br>
+            <div class="form_button">
+                <input type="submit" value="submit"/>
+                <button type="button">Reset</button>
+            </div>
+        </form>
 
- </div>
+    </section>
+    <table class="timesheet_table">
+        <tr>
+            <th>Date</th>
+            <th> Product/Project/Task</th>
+            <th>Feature/Sub-Task</th>
+            <th>Assigned By</th>
+            <th colspan="3">Actual</th>
+        </tr>
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th></th>
+            <th>Efforts(Hours)</th>
+            <th>Start Date</th>
+            <th>End Date</th>
+        </tr>
+    </table>
+    <div class="col-sm-12 footer">Footer</div>
 
-<script src="jquery/jquery-1.11.1.js"></script>
-<script src="bootstrap/js/bootstrap.js"></script>
-</Body>
+</div>
+</body>
 
 </html>
