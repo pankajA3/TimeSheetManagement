@@ -1,0 +1,34 @@
+body{
+    background-color: lavender;
+}
+.main_heading{
+    text-align: center;
+}
+.user_select{
+    width: 100px;
+    padding: 5px;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+}
+section form div{
+    float: left;
+}
+section form div label{
+    display: block;
+
+    text-align: center;
+}
+table.timesheet_table,th,td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+.timesheet_table th, td {
+    padding: 5px;
+    text-align: center;
+}
+.form_button{
+
+
+}
