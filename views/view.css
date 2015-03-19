@@ -1,24 +1,28 @@
 body{
-    background-color: lavender;
+    background-color: rgb(237,237,236) !important;
 }
+
 .main_heading{
     text-align: center;
 }
+
 .user_select{
-    width: 100px;
+    width: 150px;
     padding: 5px;
 }
-.footer{
-    position: fixed;
-    bottom: 0px;
-}
+
 section form div{
     float: left;
+    margin-left: 10px;
 }
+
 section form div label{
     display: block;
-
     text-align: center;
+}
+
+section form div input{
+    width: 200px;
 }
 table.timesheet_table,th,td{
     border: 1px solid black;
@@ -31,4 +35,28 @@ table.timesheet_table,th,td{
 .form_button{
 
 
+}
+.form-submit-btn{
+    margin-left: 30px;
+    margin-top: 25px;
+    width: 100px;
+}
+.form-reset-btn{
+    margin-left: 30px;
+    width: 100px;
+
+}
+.timesheet-table-container{
+    float: left;
+    margin-left: 26px;
+    margin-top: 50px;
+    width:100%;
+}
+.timesheet_table{
+    width:100%;
+}
+
+.footer{
+    position: fixed;
+    bottom: 0px;
 }

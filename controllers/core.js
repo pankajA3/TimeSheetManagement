@@ -10,7 +10,7 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
     $scope.date = '19/03/2013';
     //get call for index.html
     service1.getindexpage();
-
+    $scope.formData={};
     $scope.editFormData={};
     /*console.log( $scope.formData );*/
 
@@ -28,7 +28,6 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
 
    //creating timesheet obj
         //$scope.formData={};
-
         var timesheet={};
         timesheet.date=$scope.formData.Date;
         timesheet.task=$scope.formData.task;
@@ -38,19 +37,20 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
         timesheet.startDate=$scope.formData.startDate;
         timesheet.endDate=$scope.formData.endDate;
         timesheet.userId=$scope.userModel._id
-
-
-         service3.createTimeSheet(timesheet).then(function(response){
+        if(timesheet.userId === undefined){
+            alert("Please choose a user");
+            return;
+        } else if(timesheet.date === undefined || timesheet.startDate === undefined || timesheet.endDate === undefined){
+            alert("Please insert date");
+            return;
+        }
+        service3.createTimeSheet(timesheet).then(function(response){
             $scope.timesheetRes = response.data;
 
         });
-        $scope.formData={};
 
 
-
-    }
-
-
+    };
 
     $scope.switchUser = function switchUser(userId){
 
@@ -75,7 +75,7 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
             console.log("error :::", error);
         });
 
-    }
+    };
 
 
     $scope.editTimeSheetEntry=function(timesheet,userId){
@@ -88,34 +88,13 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
         $scope.editFormData.effortHour=timesheet.Effort;
         $scope.editFormData.startDate=timesheet.Start_Date;
         $scope.editFormData.endDate=timesheet.End_Date;
-       $scope.editTimesheetId=timesheet._id;
-   alert($scope.editTimesheetId);
-
-
-
-
-
-
-        /*formData.Date=timesheet.Date;
-        formData.task=timesheet.ProjectName;
-        formData.subTask=timesheet.Feature;
-        formData.assignedBy=timesheet.Assigned_By;
-        formData.effortHour=timesheet.Effort;
-       formData.startDate=timesheet.Start_Date;
-        formData.endDate=timesheet.End_Date;*/
-        //$scope.userModel._id=userId
-
-
-
-
-    }
+        $scope.editTimesheetId=timesheet._id;
+        alert($scope.editTimesheetId);
+    };
 
 
 
     $scope.updateTimeSheetEntry=function(editTimeSheetId){
-
-
-
         var timesheet={};
         timesheet.date=$scope.editFormData.Date;
         timesheet.task=$scope.editFormData.task;
@@ -134,15 +113,17 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
             console.log("error :::", error);
         });
 
+    };
 
+    $scope.resetForm = function resetFormData(){
+        $scope.formData = "";
     }
 
 
 
 
-
-
 }]);
+
 
 userTimeSheet.directive('datepicker1', function() {
     return {

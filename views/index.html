@@ -44,7 +44,7 @@
    </script>
 </head>
 
-<body ng-controller="mainController">
+<body ng-controller="mainController" >
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -52,7 +52,7 @@
         <div class="modal-content">
             <div class="modal-header">
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
-                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+                <h4 class="modal-title" id="myModalLabel">Edit TimeSheet</h4>
             </div>
             <div class="modal-body">
                 <form>
@@ -106,17 +106,20 @@
             <option value="?" >--Select User--</option>>
             </select>
         </div>
-
+        </br>
+        </br>
+        </br>
+        </br>
         <section class="col-sm-12">
-        <form>
+        <form class="timesheetForm" id="timesheetForm" novalidate>
             <div>
                 <label for="">Date</label>
 
-                <input  id="datePickerTextBox" type="text"  ng-model="formData.Date" datepicker1 />
+                <input  id="datePickerTextBox" type="text"  ng-model="formData.Date" datepicker1 required />
              </div>
             <div>
                 <label for="">Product/Project/Task</label>
-                <input type="text" name="" value="" ng-model="formData.task"/>
+                <input type="text" name="" value="" ng-model="formData.task" required/>
             </div>
             <div>
                 <label for="">Feature/Sub-Task</label>
@@ -140,35 +143,32 @@
             </div>
             </br>
             <div class="form_button">
-                <input type="submit" value="submit" ng-click="createTodo()"/>
-                <button type="button">Reset</button>
+                <input type="submit" value="submit" class="form-submit-btn" ng-click="createTodo()"/>
+                <button type="button" class="form-reset-btn" ng-click="resetForm()">Reset</button>
             </div>
         </form>
-
+            <br/>
+            <br/>
+            <br/>
+            <br/>
     </section>
     <br/>
     <br/>
-
+        <div class="timesheet-table-container">
         <table class="timesheet_table">
         <tr>
-            <th>Date</th>
-            <th> Product/Project/Task</th>
-            <th>Feature/Sub-Task</th>
-            <th>Assigned By</th>
+            <th rowspan="2">Date</th>
+            <th rowspan="2"> Product/Project/Task</th>
+            <th rowspan="2">Feature/Sub-Task</th>
+            <th rowspan="2">Assigned By</th>
             <th colspan="3">Actual</th>
-            <th></th>
-            <th></th>
+            <th rowspan="2">Edit</th>
+            <th rowspan="2">Delete</th>
         </tr>
         <tr>
-            <th></th>
-            <th></th>
-            <th></th>
-            <th></th>
             <th>Efforts(Hours)</th>
             <th>Start Date</th>
             <th>End Date</th>
-            <th></th>
-            <th></th>
         </tr>
 
         <tr ng-repeat="timesheet in timesheetRes" id={{timesheet._id}} >
@@ -179,15 +179,15 @@
             <td>{{timesheet.Effort}}</td>
             <td>{{timesheet.Start_Date}}</td>
             <td>{{timesheet.End_Date}}</td>
-            <td><button type="submit" class="btn btn-primary btn-lg" ng-click="deleteTimeSheetEntry(timesheet._id,userModel._id)">Delete</button></td>
-            <td><button type="submit" class="btn btn-primary btn-lg" data-toggle="modal"  data-target="#myModal"  ng-click="editTimeSheetEntry(timesheet,userModel._id)">Edit</button></td>
+            <td><button type="submit" class="btn btn-primary"  ng-click="deleteTimeSheetEntry(timesheet._id,userModel._id)">Delete</button></td>
+            <td><button type="submit" class="btn btn-primary" data-toggle="modal"  data-target="#myModal"  ng-click="editTimeSheetEntry(timesheet,userModel._id)">Edit</button></td>
         </tr>
 
 
 
     </table>
-
-    <div class="col-sm-12 footer">Footer</div>
+    </div>
+    <div class="col-sm-12 footer"></div>
 
 </div>
 </body>
