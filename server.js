@@ -15,9 +15,6 @@ var methodOverride = require('method-override'); // simulate DELETE and PUT (exp
 
     // connect to mongoDB database on modulus.io
 
-// define model =================
-
-
 app.use(express.static(__dirname + '/views'));                 // set the static files location /public/img will be /img for users
 app.use(express.static(__dirname + '/controllers'));
 app.use(express.static(__dirname + '/services'));

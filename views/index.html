@@ -20,6 +20,19 @@
     <link rel="stylesheet" href="//code.jquery.com/ui/1.11.4/themes/smoothness/jquery-ui.css">
     <script src="//code.jquery.com/jquery-1.10.2.js"></script>
     <script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+
+
+
    <!-- <link rel="stylesheet" href="/resources/demos/style.css">-->
     <script>
         $(function() {
@@ -32,11 +45,65 @@
 </head>
 
 <body ng-controller="mainController">
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div>
+                        <label for="">Date</label>
+
+                        <input  id="editDatePickerTextBox" type="text"  ng-model="editFormData.Date"  datepicker4/>
+                    </div>
+                    <div>
+                        <label for="">Product/Project/Task</label>
+                        <input type="text" name="" value="" ng-model="editFormData.task"/>
+                    </div>
+                    <div>
+                        <label for="">Feature/Sub-Task</label>
+                        <input type="text" name="" value=""  ng-model="editFormData.subTask" />
+                    </div>
+                    <div>
+                        <label for="">Assigned By</label>
+                        <input type="text" name="" value="" ng-model="editFormData.assignedBy"/>
+                    </div>
+                    <div>
+                        <label for=""> Efforts(Hours)</label>
+                        <input type="text" name="" value="" ng-model="editFormData.effortHour"/>
+                    </div>
+                    <div>
+                        <label for="">Start Date</label>
+                        <input id="editStartdatePickerTextBox" type="text"    ng-model="editFormData.startDate" datepicker5/>
+                    </div>
+                    <div>
+                        <label for="">End Date</label>
+                        <input id="editEnddatePickerTextBox" type="text"    ng-model="editFormData.endDate" datepicker6/>
+                    </div>
+                    </br>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary" ng-click="updateTimeSheetEntry(editTimesheetId)">Update changes</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 <h1 class="main_heading" >TimeSheet Management System</h1>
     <div class="container">
         <div class="col-sm-12 userlist" >
             Select User<select class="user_select" id="userDropDown" ng-model="userModel" ng-change="switchUser(userModel._id)" ng-options="user.UserName for user in users">
-            <option>--Select User--</option>>
+            <option value="?" >--Select User--</option>>
             </select>
         </div>
 
@@ -45,7 +112,7 @@
             <div>
                 <label for="">Date</label>
 
-                <input id="datepicker" type="text" name="" value=""  ng-model="formData.Date"/>
+                <input  id="datePickerTextBox" type="text"  ng-model="formData.Date" datepicker1 />
              </div>
             <div>
                 <label for="">Product/Project/Task</label>
@@ -65,11 +132,11 @@
             </div>
             <div>
                     <label for="">Start Date</label>
-                <input id="startDatepicker" type="text" name="" value=""   ng-model="formData.startDate"/>
+                <input id="startdatePickerTextBox" type="text"    ng-model="formData.startDate" datepicker2/>
             </div>
             <div>
                     <label for="">End Date</label>
-                <input id="endDatepicker" type="text" name="" value=""   ng-model="formData.endDate"/>
+                <input id="enddatePickerTextBox" type="text"    ng-model="formData.endDate" datepicker3/>
             </div>
             </br>
             <div class="form_button">
@@ -90,6 +157,7 @@
             <th>Assigned By</th>
             <th colspan="3">Actual</th>
             <th></th>
+            <th></th>
         </tr>
         <tr>
             <th></th>
@@ -99,6 +167,7 @@
             <th>Efforts(Hours)</th>
             <th>Start Date</th>
             <th>End Date</th>
+            <th></th>
             <th></th>
         </tr>
 
@@ -111,7 +180,7 @@
             <td>{{timesheet.Start_Date}}</td>
             <td>{{timesheet.End_Date}}</td>
             <td><button type="submit" class="btn btn-primary btn-lg" ng-click="deleteTimeSheetEntry(timesheet._id,userModel._id)">Delete</button></td>
-
+            <td><button type="submit" class="btn btn-primary btn-lg" data-toggle="modal"  data-target="#myModal"  ng-click="editTimeSheetEntry(timesheet,userModel._id)">Edit</button></td>
         </tr>
 
 

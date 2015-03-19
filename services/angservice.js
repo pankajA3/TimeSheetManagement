@@ -116,6 +116,25 @@ userTimeSheet.service('service6', ['$http',function($http){
 }]);
 
 
+userTimeSheet.service('service7', ['$http',function($http){
+    var serviceObj = {};
+
+    serviceObj.updateTimesheetEntry = function updateTimeSheet(timesheet){
+        alert("service7="+timesheet.date);
+
+
+        return $http.post('/api/users/timesheetUpdate/',timesheet).success(function(data) {
+
+            return data;
+        })
+            .error(function(error) {
+                console.log('Error: ', error);
+            });
+    }
+
+    return serviceObj;
+}]);
+
 
 
 
