@@ -41,7 +41,7 @@ userTimeSheet.service('service3', ['$http',function($http){
     var serviceObj = {};
 
     serviceObj.createTimeSheet = function createTimeSheet(timesheet){
-       alert("in service"+timesheet.date) ;
+
         return $http.post('/api/timesheetInsert',timesheet).success(function(data) {
 
             return data;
@@ -83,7 +83,7 @@ userTimeSheet.service('service5', ['$http',function($http){
     var serviceObj = {};
 
     serviceObj.getUserWithId = function getUsers(userId){
-     alert("service5="+userId);
+
         return $http.get('/api/users/' + userId).success(function(data) {
 
             return data;
@@ -100,8 +100,7 @@ userTimeSheet.service('service6', ['$http',function($http){
     var serviceObj = {};
 
     serviceObj.deleteTimesheetEntry = function getUsers(timesheetId,userId){
-        alert("service6="+timesheetId);
-        alert("service6="+userId);
+
 
         return $http.delete('/api/users/'+userId +'/'+ timesheetId).success(function(data) {
 
@@ -120,7 +119,7 @@ userTimeSheet.service('service7', ['$http',function($http){
     var serviceObj = {};
 
     serviceObj.updateTimesheetEntry = function updateTimeSheet(timesheet){
-        alert("service7="+timesheet.date);
+
 
 
         return $http.post('/api/users/timesheetUpdate/',timesheet).success(function(data) {
@@ -135,6 +134,22 @@ userTimeSheet.service('service7', ['$http',function($http){
     return serviceObj;
 }]);
 
+//export timesheet data
+userTimeSheet.service('service8', ['$http',function($http){
+    var serviceObj = {};
+
+    serviceObj.expotTimesheet = function exporrtTimeSheet(user_id){
+
+        return $http.get('/api/users/timesheetexport/'+user_id).success(function(data) {
+
+             return data;
+       })      .error(function(error) {
+                console.log('Error: ', error);
+            });
+    }
+
+    return serviceObj;
+}]);
 
 
 

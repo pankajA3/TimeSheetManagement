@@ -1,0 +1,445 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="0dda3f8e-69ae-433e-9b5e-8a85260d95d5" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/views/inde1.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/mongodb/node_modules/bson/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/bson/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/Makefile" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/build/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/services/angservice.js" afterPath="$PROJECT_DIR$/services/angservice.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/controllers/core.js" afterPath="$PROJECT_DIR$/controllers/core.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/views/index.html" afterPath="$PROJECT_DIR$/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/package.json" afterPath="$PROJECT_DIR$/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/package.json" afterPath="$PROJECT_DIR$/node_modules/body-parser/node_modules/type-is/node_modules/mime-types/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/accepts/node_modules/mime-types/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/debug/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/debug/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/escape-html/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/escape-html/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/finalhandler/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/finalhandler/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/fresh/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/mime/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/send/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime-types/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/type-is/node_modules/mime-types/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/express/node_modules/utils-merge/package.json" afterPath="$PROJECT_DIR$/node_modules/express/node_modules/utils-merge/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/boom/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/boom/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/cryptiles/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/cryptiles/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/hoek/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/hoek/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/inert/node_modules/lru-cache/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/inert/node_modules/lru-cache/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/iron/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/iron/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/joi/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/joi/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/mimos/node_modules/mime-db/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/mimos/node_modules/mime-db/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/hapi/node_modules/qs/package.json" afterPath="$PROJECT_DIR$/node_modules/hapi/node_modules/qs/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/method-override/node_modules/debug/package.json" afterPath="$PROJECT_DIR$/node_modules/method-override/node_modules/debug/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/method-override/node_modules/debug/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/method-override/node_modules/debug/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/hooks/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mongodb/node_modules/kerberos/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/mpath/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/ms/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/package.json" afterPath="$PROJECT_DIR$/node_modules/mongoose/node_modules/regexp-clone/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/node_modules/morgan/node_modules/bytes/package.json" afterPath="$PROJECT_DIR$/node_modules/morgan/node_modules/bytes/package.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/route/route.js" afterPath="$PROJECT_DIR$/route/route.js" />
+    </list>
+    <ignored path="TimeSheetManagement.iws" />
+    <ignored path=".idea/workspace.xml" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CreatePatchCommitExecutor">
+    <option name="PATCH_PATH" value="" />
+  </component>
+  <component name="DaemonCodeAnalyzer">
+    <disable_hints />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
+  <component name="FavoritesManager">
+    <favorites_list name="TimeSheetManagement" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf>
+      <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/server.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+              <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-13.666667" vertical-offset="2612" max-vertical-offset="3270">
+              <caret line="196" column="42" selection-start-line="196" selection-start-column="42" selection-end-line="196" selection-end-column="42" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="core.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controllers/core.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1523" max-vertical-offset="4215">
+              <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angservice.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/angservice.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="2565">
+              <caret line="142" column="15" selection-start-line="142" selection-start-column="15" selection-end-line="142" selection-end-column="15" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="route.js" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/route/route.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.5816733" vertical-offset="4118" max-vertical-offset="4665">
+              <caret line="294" column="26" selection-start-line="294" selection-start-column="26" selection-end-line="294" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="timeSheet.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/model/timeSheet.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+              <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package.json" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/package.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="375">
+              <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/package.json" />
+        <option value="$PROJECT_DIR$/server1.js" />
+        <option value="$PROJECT_DIR$/services/angservice.js" />
+        <option value="$PROJECT_DIR$/controllers/core.js" />
+        <option value="$PROJECT_DIR$/views/index.html" />
+        <option value="$PROJECT_DIR$/route/route.js" />
+      </list>
+    </option>
+  </component>
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+  </component>
+  <component name="ProjectFrameBounds">
+    <option name="x" value="65" />
+    <option name="y" value="24" />
+    <option name="width" value="1535" />
+    <option name="height" value="876" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+    <OptionsSetting value="true" id="Add" />
+    <OptionsSetting value="true" id="Remove" />
+    <OptionsSetting value="true" id="Checkout" />
+    <OptionsSetting value="true" id="Update" />
+    <OptionsSetting value="true" id="Status" />
+    <OptionsSetting value="true" id="Edit" />
+    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="0" id="Remove" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="ProjectPane" proportions="" version="1">
+      <flattenPackages />
+      <showMembers />
+      <showModules />
+      <showLibraryContents />
+      <hideEmptyPackages />
+      <abbreviatePackageNames />
+      <autoscrollToSource />
+      <autoscrollFromSource />
+      <sortByType />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="route" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TimeSheetManagement" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="model" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="Scope" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="HbShouldOpenHtmlAsHb" value="" />
+    <property name="recentsLimit" value="5" />
+  </component>
+  <component name="RunManager" selected="Node.js.server.js (2)">
+    <configuration default="false" name="server.js (5)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="server1.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="server1.js" working-dir="$PROJECT_DIR$">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="server.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="server.js (1)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="false" name="server.js (2)" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="/usr/bin/node" path-to-js-file="server.js" working-dir="$PROJECT_DIR$">
+      <RunnerSettings RunnerId="Basic" />
+      <ConfigurationWrapper RunnerId="Basic" />
+      <method />
+    </configuration>
+    <configuration default="true" type="DartUnitRunConfigurationType" factoryName="DartUnit">
+      <method />
+    </configuration>
+    <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
+      <method />
+    </configuration>
+    <configuration default="true" type="JSTestDriver:ConfigurationType" factoryName="JsTestDriver">
+      <setting name="configLocationType" value="CONFIG_FILE" />
+      <setting name="settingsFile" value="" />
+      <setting name="serverType" value="INTERNAL" />
+      <setting name="preferredDebugBrowser" value="Chrome" />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavaScriptTestRunnerKarma" factoryName="Karma" config-file="">
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="JavascriptDebugType" factoryName="JavaScript Debug">
+      <method />
+    </configuration>
+    <configuration default="true" type="NodeJSConfigurationType" factoryName="Node.js" working-dir="">
+      <method />
+    </configuration>
+    <configuration default="true" type="cucumber.js" factoryName="Cucumber.js">
+      <option name="cucumberJsArguments" value="" />
+      <option name="executablePath" />
+      <option name="filePath" />
+      <method />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
+      <method />
+    </configuration>
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Node.js.server.js (5)" />
+      <item index="1" class="java.lang.String" itemvalue="Node.js.server1.js" />
+      <item index="2" class="java.lang.String" itemvalue="Node.js.server.js" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.server.js (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Node.js.server.js (2)" />
+    </list>
+    <recent_temporary>
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="Node.js.server.js (2)" />
+        <item index="1" class="java.lang.String" itemvalue="Node.js.server.js (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.server.js" />
+        <item index="3" class="java.lang.String" itemvalue="Node.js.server1.js" />
+        <item index="4" class="java.lang.String" itemvalue="Node.js.server.js (5)" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ShelveChangesManager" show_recycled="false" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="0dda3f8e-69ae-433e-9b5e-8a85260d95d5" name="Default" comment="" />
+      <created>1426826782548</created>
+      <option name="number" value="Default" />
+      <updated>1426826782548</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="65" y="24" width="1535" height="876" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2495114" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32920793" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+    </layout>
+  </component>
+  <component name="Vcs.Log.UiProperties">
+    <option name="RECENTLY_FILTERED_USER_GROUPS">
+      <collection />
+    </option>
+    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+      <collection />
+    </option>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="myTodoPanelSettings">
+      <TodoPanelSettings />
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager />
+    <watches-manager />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-4.375" vertical-offset="0" max-vertical-offset="375">
+          <caret line="7" column="20" selection-start-line="7" selection-start-column="20" selection-end-line="7" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/timeSheet.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="360">
+          <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="600">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controllers/core.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1523" max-vertical-offset="4215">
+          <caret line="140" column="0" selection-start-line="140" selection-start-column="0" selection-end-line="140" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-13.666667" vertical-offset="2612" max-vertical-offset="3270">
+          <caret line="196" column="42" selection-start-line="196" selection-start-column="42" selection-end-line="196" selection-end-column="42" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/angservice.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="1845" max-vertical-offset="2565">
+          <caret line="142" column="15" selection-start-line="142" selection-start-column="15" selection-end-line="142" selection-end-column="15" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/route/route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.5816733" vertical-offset="4118" max-vertical-offset="4665">
+          <caret line="294" column="26" selection-start-line="294" selection-start-column="26" selection-end-line="294" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>

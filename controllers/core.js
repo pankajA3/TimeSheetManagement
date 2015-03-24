@@ -6,7 +6,7 @@
 var userTimeSheet = angular.module('userTimeSheet', []);
 
 
-userTimeSheet.controller('mainController',['$scope','service1','service2','service3','service4','service5','service6','service7',function($scope,service1,service2,service3,service4,service5,service6,service7){
+userTimeSheet.controller('mainController',['$scope','service1','service2','service3','service4','service5','service6','service7','service8',function($scope,service1,service2,service3,service4,service5,service6,service7,service8){
     $scope.date = '19/03/2013';
     //get call for index.html
     service1.getindexpage();
@@ -44,9 +44,15 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
             alert("Please insert date");
             return;
         }
+
+
+
+
+
+
         service3.createTimeSheet(timesheet).then(function(response){
             $scope.timesheetRes = response.data;
-
+            $scope.formData={};
         });
 
 
@@ -89,7 +95,7 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
         $scope.editFormData.startDate=timesheet.Start_Date;
         $scope.editFormData.endDate=timesheet.End_Date;
         $scope.editTimesheetId=timesheet._id;
-        alert($scope.editTimesheetId);
+
     };
 
 
@@ -106,6 +112,16 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
         timesheet.userId=$scope.userModel._id;
         timesheet.timesheetId=editTimeSheetId;
 
+
+        if(timesheet.userId === undefined){
+            alert("Please choose a user");
+            return;
+        } else if(timesheet.date === undefined || timesheet.startDate === undefined || timesheet.endDate === undefined){
+            alert("Please insert date");
+            return;
+        }
+
+
         service7.updateTimesheetEntry(timesheet).then(function (response){
             $scope.timesheetRes = response.data;
             $('#myModal').modal('toggle');
@@ -119,8 +135,28 @@ userTimeSheet.controller('mainController',['$scope','service1','service2','servi
         $scope.formData = "";
     }
 
+    $scope.exportTimeSheet=function exportTimeSheet(user_Id){
+
+        if(user_Id===undefined){
+
+            alert("please Select User");
+        }else {
+            service8.expotTimesheet(user_Id).then(function (response){
+               // $scope.timesheetRes = response.data;
+                $scope.fileDownload=response;
+
+                $('#fileDownloadDiv').html(response.data);
+               $('#fileDownloadModal').modal('toggle');
+                console.log(response);
 
 
+            }, function(error) {
+                console.log("error :::", error);
+            });
+
+
+                        }
+    }
 
 }]);
 
@@ -230,6 +266,7 @@ userTimeSheet.directive('datepicker6', function() {
         }
     }
 });
+
 
 
 

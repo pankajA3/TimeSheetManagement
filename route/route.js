@@ -4,6 +4,9 @@
 
 var express =require('express');
 var timesheetModule=require('../model/timeSheet');
+var fs=require('fs');
+var json2csv = require('json2csv');
+
 var router=express.Router();
 var Db=require('mongodb').Db,
     Connection=require('mongodb').Connection,
@@ -17,13 +20,13 @@ var db= new Db('TimeSheetManagement_dbNew1',new Server(host,port,{auto_reconnect
 // application -------------------------------------------------------------
 router.get('/', function(req, res) {
     console.log("in /");
-    res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+    res.sendfile('./views/index.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
 
 router.get('/index', function(req, res) {
     console.log("in /index");
 
-    res.sendfile('./public/index.html'); // load the single view file (angular will handle the page changes on the front-end)
+    res.sendfile('./views/index.html'); // load the single view file (angular will handle the page changes on the front-end)
 });
 // api ---------------------------------------------------------------------
 // get all users
@@ -214,16 +217,9 @@ router.delete('/api/users/:userId/:timesheetId', function(req, res) {
             return;
 
         } else {
-            col.remove({_id:ObjectId(req.params.timesheetId)},function (err, TimesheetData) {
-               if(err){
-                   callback(true);
-                   return;
-               }else {
-                   col.find({userId: req.params.userId}).toArray(function (err, TimesheetData) {
-                       console.log("FindData=" + TimesheetData.toString());
-                       res.json(TimesheetData);
-                   });
-               }
+            col.find({userId:req.params.user_id}).toArray(function (err, TimesheetData) {
+                console.log("FindData="+TimesheetData.toString());
+                res.json(TimesheetData);
             });
         }
     });
@@ -232,6 +228,79 @@ router.delete('/api/users/:userId/:timesheetId', function(req, res) {
 
 });
 
+
+router.get('/api/users/timesheetexport/:user_id', function(req, res) {
+
+    var ws = fs.createWriteStream('sample.csv');
+    var file;
+    db.collection("TimesheetData", function (err, col) {
+        if (err) {
+
+            callback(true);
+            return;
+
+        } else {
+
+                   col.find({userId: req.params.user_id}).toArray(function (err, TimesheetData) {
+
+                       if(err){
+
+                           callback(true);
+                           return;
+                       }else {
+
+
+                           console.log("FindData=" + TimesheetData.toString());
+                           json2csv({data: TimesheetData, fields: ['Date','ProjectName','Feature','Assigned_By','Effort','Start_Date','End_Date']}, function(err, csv) {
+                               if (err) console.log(err);
+                               fs.writeFile( __dirname+'/'+req.params.user_id+'.csv', csv, function(err) {
+                                   if (err) throw err;
+                                   console.log('file saved');
+
+
+                               });
+                           });
+                         console.log( __dirname+'/'+req.params.user_id+'.csv');
+
+                           res.send('<ul>'
+                           + "<li>Download <a href=/file/"+req.params.user_id+">Click here To download file</a>.</li>"
+
+                           + '</ul>');
+
+
+                           /*res.download( __dirname+'/file.csv','file.csv',function(err){
+                               if (err) {
+                                   console.log("file  get error");
+
+                                   // Handle error, but keep in mind the response may be partially-sent
+                                   // so check res.headersSent
+                               } else {
+                                   console.log("file get");
+                                   // decrement a download credit, etc.
+                               }
+                           });
+*/
+
+                       }
+
+                     });
+               }
+    });
+
+
+
+});
+
+
+router.get('/file/:user_id', function(req, res) {
+  console.log("in file csv");
+    console.log(req.params.user_id+'.csv');
+    var path = __dirname +'/'  + req.params.user_id+'.csv';
+
+    res.download(path);
+
+
+});
 
 
 module.exports=router;
